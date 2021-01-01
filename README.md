@@ -3,5 +3,6 @@
 
 # Overview:
 
-|Day| Project |Description| Status |
-|--|--|--|--|
+|Day| Project| Status |
+|--|--|--|
+|1|Username Generator| Done|
