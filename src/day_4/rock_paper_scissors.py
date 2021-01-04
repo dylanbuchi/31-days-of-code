@@ -99,7 +99,7 @@ def main(points):
             input("Choose Rock (1), Paper (2), or Scissors (3):\n").lower().
             strip()[:1]) - 1
 
-    except ValueError:
+    except (ValueError, IndexError):
         player_choice = random.randint(0, 2)
 
     result = get_game_result(player_choice, computer_choice, points)
