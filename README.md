@@ -4,8 +4,9 @@
 
 # Overview:
 
-| Day | Project                                                                                      | Status |
-| --- | -------------------------------------------------------------------------------------------- | ------ |
-| 1   | [Username Generator](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_1/username_generator.py) | Done   |
-| 2   | [Tip Calculator](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_2/tip_calculator.py)     | Done   |
-| 3   | [Treasure Island](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_3/treasure_island.py)    | Done   |
+| Day | Project                                                                                                          | Status |
+| --- | ---------------------------------------------------------------------------------------------------------------- | ------ |
+| 1   | [Username Generator](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_1/username_generator.py)   | Done   |
+| 2   | [Tip Calculator](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_2/tip_calculator.py)           | Done   |
+| 3   | [Treasure Island](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_3/treasure_island.py)         | Done   |
+| 4   | [Rock Paper Scissors](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_4/rock_paper_scissors.py) | Done   |
