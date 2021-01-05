@@ -1,4 +1,4 @@
-# Tip Calculator
+# Rock Paper Scissors
 
 ## Demo:
-![day2](https://user-images.githubusercontent.com/52018183/103613763-e1673400-4f05-11eb-9af1-9f98ca432b23.png)
+![Screenshot (297)](https://user-images.githubusercontent.com/52018183/103614897-5dfb1200-4f08-11eb-8e04-53fd69c5c641.png)
