@@ -89,7 +89,6 @@ def main():
 
     except (KeyboardInterrupt):
         print('Exit Program')
-        ask_user_how_many_dices()
 
 
 if __name__ == "__main__":
