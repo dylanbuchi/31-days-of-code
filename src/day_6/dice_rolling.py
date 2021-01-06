@@ -52,7 +52,7 @@ def print_stats(results):
     print(" STATS ".center(20, '*'))
 
     for dice, total in sorted_dices:
-        print(f"Dice {dice}:\ntotal: {total} times\n")
+        print(f"Dice {dice}:\ntotal: {total}\n")
 
     if len(results) > 3:
         lucky_numbers = get_lucky_numbers(results)
