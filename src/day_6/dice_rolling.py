@@ -48,7 +48,6 @@ def get_lucky_numbers(results):
 
 def print_stats(results):
     sorted_dices = list(sorted(results.items()))
-
     print(" STATS ".center(20, '*'))
 
     for dice, total in sorted_dices:
