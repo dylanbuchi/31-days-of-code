@@ -13,5 +13,5 @@
 | 5   | Password Generator     | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_5#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_5/password_generator.py)  |     |
 | 6   | Dice Rolling Simulator | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_6#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_6/dice_rolling.py)        |     |
 | 7   | Hangman Game           | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_7#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_7/hangman.py)             |     |
-| 8  | Caesar Cipher         | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_8#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_7/caesar_cipher.py)             |     |
+| 8  | Caesar Cipher         | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_8#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_8/caesar_cipher.py)             |     |
 
