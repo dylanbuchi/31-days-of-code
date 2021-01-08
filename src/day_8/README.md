@@ -4,4 +4,4 @@
 
 ## Demo:
 
-![](https://media.giphy.com/media/UzMXkx9pFv7q7rUdb9/giphy.gif)
+![](https://user-images.githubusercontent.com/52018183/104049880-77c87d80-51c4-11eb-9d34-43ded937e8ac.gif)
