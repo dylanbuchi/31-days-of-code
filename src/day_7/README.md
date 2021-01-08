@@ -3,4 +3,4 @@
 ## [Code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_7/hangman.py)
 
 ## Demo:
-<img src="https://user-images.githubusercontent.com/52018183/103886980-18ce1000-50c1-11eb-8424-ff87ee4a98a9.gif" width="600">
+![](https://user-images.githubusercontent.com/52018183/104050222-0fc66700-51c5-11eb-8691-e222b7ad0ad6.gif)
