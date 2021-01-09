@@ -1,7 +1,8 @@
-# auction_program
+# Auction Program
 
 ## [Code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_9/auction_program.py)
 
 ## Demo:
 
-<!-- ![](https://user-images.githubusercontent.com/52018183/104049880-77c87d80-51c4-11eb-9d34-43ded937e8ac.gif) -->
+![bid](https://user-images.githubusercontent.com/52018183/104095985-a30ca480-5278-11eb-9422-6ee2bb9da6fa.gif)
+
