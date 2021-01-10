@@ -15,4 +15,5 @@
 | 7   | Hangman Game           | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_7#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_7/hangman.py)             |     |
 | 8  | Caesar Cipher         | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_8#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_8/caesar_cipher.py)             |     |
 | 9 | Auction Program        | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_9#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_9/auction_program.py)             |     |
+| 10 | Calculator        | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_10#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_10/main.py)             |     |
 
