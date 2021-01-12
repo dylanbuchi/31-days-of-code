@@ -12,7 +12,7 @@ def create_standard_deck():
     """Create a deck of cards with 8 packs"""
     deck = []
     for _ in range(8):
-        cards = {i: i for (i) in range(1, 11)}
+        cards = {i: i for (i) in range(2, 11)}
         cards.update({'J': 10, 'Q': 10, 'K': 10, 'A': [11, 1]})
         deck.append(cards)
     return deck
