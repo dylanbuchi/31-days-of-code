@@ -1,4 +1,4 @@
-# Blackjack
+# Number Guessing Game
 import sys
 import random
 
