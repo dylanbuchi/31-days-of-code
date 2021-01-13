@@ -18,4 +18,5 @@
 | 10  | Calculator             | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_10#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_10/main.py)               |     |
 | 11  | BlackJack              | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_11#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_11/blackjack.py)          |     |
 | 12  | Number Guessing Game              | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_12#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_12/number_guess.py)          |     |
+| 13  | FizzBuzz             | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_13#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_13/fizzbuzz.py)          |     |
 
