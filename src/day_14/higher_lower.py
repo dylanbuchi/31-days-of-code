@@ -62,7 +62,8 @@ def play_higher_lower():
         if (starting):
             compared_data, against_data = get_random_choices(game_data)
         else:
-            _, against_data = get_random_choices(game_data)
+            while compared_data == against_data:
+                against_data = random.choice(game_data)
 
         compared_info = get_data_info(compared_data)
         against_info = get_data_info(against_data)
