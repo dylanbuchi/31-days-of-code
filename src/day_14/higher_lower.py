@@ -111,7 +111,7 @@ def get_data_info(data):
 
 def print_data_info(data, string):
     name, description, country = data
-    an_or_a = 'an' if description[0][0] in ['AEIOU'] else 'a'
+    an_or_a = 'an' if description[0][0] in 'AEIOU' else 'a'
     color_string = Fore.RED if 'A' in string else Fore.CYAN
     print(
         f"{color_string + string} {Fore.YELLOW + name}, {an_or_a} {description}, from {country}."
