@@ -47,7 +47,7 @@ def get_coffee(coffee_machine, coffee_name):
             coffee_machine.check_enough_ingredients_to_make_a_coffee(coffee)
 
 
-def make_user_coffee(coffee_machine, user_choice):
+def make_user_coffee(coffee_machine: CoffeeMachine, user_choice):
     choices_coffees = {'1': 'Latte', '2': 'Espresso', '3': 'Cappuccino'}
     change = coffee_machine.prepare_coffee(choices_coffees[user_choice])
 
@@ -56,6 +56,14 @@ def make_user_coffee(coffee_machine, user_choice):
         print(f"\nHere is your change: ${change:.2f}!\n")
 
     elif change == False:
+        coffee_name = choices_coffees[user_choice]
+        if not coffee_machine.ingredients.water:
+            print(Fore.RED + f"No more water to make a coffee!")
+        elif not coffee_machine.ingredients.milk:
+            print(Fore.RED + f"No more milk to make a coffee!")
+        elif not coffee_machine.ingredients._coffee_beans:
+            print(Fore.RED + f"No more coffee beans to make a coffee!")
+
         coffee_machine.print_report()
         print("\nSomeone will come to refill the machine, come back later!")
         coffee_machine.shut_down_coffee_machine()
@@ -110,7 +118,7 @@ def user_interface(coffee_machine):
 def main():
     coffee_machine = CoffeeMachine(
         ingredients=get_default_coffee_ingredients(),
-        total_money=50,
+        total_money=12,
         coffees=get_default_coffees())
 
     init(autoreset=True)

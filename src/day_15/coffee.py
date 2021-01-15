@@ -197,14 +197,14 @@ class CoffeeMachine:
         total_milk = self.ingredients.milk
         total_coffee_beans = self.ingredients.coffee_beans
 
-        if (total_water < coffee.get_water() or total_water <= 0):
+        if (total_water < coffee.get_water() or total_water <= 1):
             print(Fore.RED + f"Not enough water to make a {coffee.name}")
             return False
-        elif (total_milk < coffee.get_milk() or total_milk <= 0):
+        elif (total_milk < coffee.get_milk() or total_milk <= 1):
             print(Fore.RED + f"Not enough milk to make a {coffee.name}")
             return False
         elif total_coffee_beans < coffee.get_coffee_beans(
-        ) or total_coffee_beans <= 0:
+        ) or total_coffee_beans <= 1:
             print(Fore.RED +
                   f"Not enough coffee beans to make a {coffee.name}")
             return False
