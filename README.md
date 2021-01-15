@@ -20,4 +20,5 @@
 | 12  | Number Guessing Game              | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_12#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_12/number_guess.py)          |     |
 | 13  | FizzBuzz             | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_13#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_13/fizzbuzz.py)          |     |
 | 14  | Higher Lower Game             | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_14#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_14/higher_lower.py)          |     |
+| 14  |**Coffee Machine**           | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_15#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_15/main.py)          |     |
 
