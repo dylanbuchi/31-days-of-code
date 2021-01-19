@@ -24,4 +24,5 @@
 | **16**  |**Tic Tac Toe**           | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_16#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_16/main.py)          |     |
 | **17**  |**Quiz Program**           | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_17#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_17/main.py)          |     |
 | 18  | Dot Painting           | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_18#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_18/art.py)          |     |
+| **19**  | **Turtle Race Game**         | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_19#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_19/main.py)          |     |
 
