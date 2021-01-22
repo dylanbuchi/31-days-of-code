@@ -27,4 +27,5 @@
 | **19**  | **Turtle Race Game**         | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_19#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_19/main.py)          |     |
 | **20**  | **Snake Game**         | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_20#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_20/main.py)          |     |
 | **21**  | **Pong Game**         | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_21#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_21/main.py)          |     |
+| **22**  | **Crossy Road Game**         | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_22#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_22/main.py)          |     |
 
