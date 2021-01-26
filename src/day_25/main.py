@@ -62,8 +62,8 @@ def main():
     calculate_button.grid(row=2, column=2)
 
     # km label
-    Km_label = tk.Label(text='Km')
-    Km_label.grid(row=1, column=3)
+    km_label = tk.Label(text='Km')
+    km_label.grid(row=1, column=3)
 
     screen.mainloop()
 
