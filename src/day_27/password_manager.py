@@ -5,6 +5,7 @@ import tkinter.messagebox as messagebox
 from tkinter import PhotoImage, Tk, Canvas
 from PIL import Image, ImageTk
 from password_generator import PasswordGenerator
+from file_handler import PasswordsDataFileHandler
 
 PASSWORD_IMAGE_PATH = os.path.join(os.getcwd(), 'src/day_27/images/pass.png')
 PASSWORDS_DATA_FILE_PATH = os.path.join(os.getcwd(),
@@ -15,13 +16,14 @@ class PasswordManager(Tk):
     def __init__(self):
         super().__init__()
         self.canvas = Canvas(width=200, height=150)
+        self.password_generator = PasswordGenerator()
+        self.file_handler = PasswordsDataFileHandler()
         self.website = None
         self.email = None
         self.password = None
         self.password_entry = None
         self.entries = []
         self.passwords_data = []
-        self.password_generator = PasswordGenerator()
         self.config_app()
         self.mainloop()
 
@@ -60,19 +62,7 @@ class PasswordManager(Tk):
         self.passwords_data.clear()
 
     def append_passwords_data_to_file(self):
-
-        with open(PASSWORDS_DATA_FILE_PATH, 'a') as password_data_file:
-            password_data_file.write('\n')
-            website, email, password = self.passwords_data
-            password_data_file.write(
-                f"Website: {website}\nEmail: {email}\nPassword: {password}")
-
-            self.write_line_to_file(password_data_file)
-
-    def write_line_to_file(self, filename):
-        filename.write('\n')
-        filename.write('-' * 20)
-        filename.write('\n')
+        self.file_handler.save_data_to_file(self.passwords_data)
 
     def append_data_to_passwords_data(self):
         for entry in self.entries:
