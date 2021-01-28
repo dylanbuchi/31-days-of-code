@@ -118,8 +118,8 @@ class PomodoroTimerApp(Tk):
 
             if count < 10:
                 seconds = f"0{seconds}"
-            if seconds == 0:
-                seconds = f"00"
+            elif int(seconds) < 10:
+                seconds = f"0{seconds}"
 
             timer = f"{minutes}:{seconds}"
 
