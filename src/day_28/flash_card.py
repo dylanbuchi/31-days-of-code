@@ -55,7 +55,7 @@ class Flashcard(tk.Tk):
         except IndexError:
             sys.exit()
 
-    def remove_from_known_card_from_french_english_words_dict(self):
+    def remove_known_card_from_french_english_words_dict(self):
         temp = self.french_english_words_dict[:]
         index = next((index for (index, dic) in enumerate(temp)
                       if dic["French"] == self.french_word.lower()), None)
