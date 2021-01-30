@@ -34,4 +34,5 @@
 | **26**   |**Pomodoro Timer App**        | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_26#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_26/pomodoro.py)          |     |
 | **27**   |**Password Manager App**        | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_27#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_27/password_manager.py)          |     |
 | **28**   |**FlashCards App**        | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_28#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_28/flash_card.py)          |     |
+| 29   |Weather Forecast via SMS        | [demo](https://github.com/dylanbuchi/100-days-of-code/tree/main/src/day_29#demo) | [code](https://github.com/dylanbuchi/100-days-of-code/blob/main/src/day_29/main.py)          |     |
 
