@@ -1,6 +1,6 @@
-# 100 Days Of Code
+# 31 Days Of Code
 
-100 days of code challenge in Python
+## I did one project a day in Python for a month.
 
 # Overview:
 
