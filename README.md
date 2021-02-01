@@ -1,6 +1,6 @@
 # 31 Days Of Code
 
-## I did one project a day in Python for a month.
+## I did a Python project every day for a month
 
 # Overview:
 
