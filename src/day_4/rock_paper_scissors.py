@@ -38,12 +38,9 @@ def get_index_from(user_choice):
 
 
 def play_again(points):
-    choice = input("Press enter to play again or else to exit")
-
-    if choice == '':
-        main(points)
-    else:
-        sys.exit()
+    main(points) if (choice :=
+                     input("Press enter to play again or else to exit")
+                     == '') else sys.exit()
 
 
 def print_game_images(player, computer):
