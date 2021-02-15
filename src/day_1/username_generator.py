@@ -1,30 +1,56 @@
 # Username Generator
 
 
-def print_welcome():
-    print("Welcome to the username generator.")
+def print_welcome(name: str):
+    print(f"Welcome to {name}.")
 
 
-def get_username():
-    user_color = input("What's your favorite color?\n")
-    user_food = input("What's your favorite food?\n")
-    username = create_username(user_color, user_food)
+def get_username() -> str:
+    user_color = ask_user_favorite('color')
+    user_food = ask_user_favorite('food')
+    username = create_username_from(user_color, user_food)
 
-    return f"Your username is {username}"
+    return username
 
 
-def create_username(color, food):
-    food = food.replace(" ", '-').title()
-    color = color.replace(" ", '-').title()
-    number = len(color) * len(food)
+def ask_user_favorite(item: str) -> str:
+    return input(f"What's your favorite {item}?\n")
 
-    return f"{color}-{food}{number}"
+
+def create_username_from(*args: str):
+    if not args:
+        raise ValueError("Cant create an empty username")
+
+    username_parts = []
+    username_number = 0
+
+    for arg in args:
+        username_parts.append(title_string_and_replace_spaces(arg, '-'))
+        username_number += len(arg)
+
+    username_number *= len(args)
+
+    username_parts.append(str(username_number))
+    username = format_username(username_parts)
+
+    return username
+
+
+def title_string_and_replace_spaces(string: str, replacement: str):
+    result = string.replace(" ", replacement)
+    return result.title()
+
+
+def format_username(username_parts):
+    username = f"{'-'.join(username_parts[:-1])}{username_parts[-1]}"
+    return username
 
 
 def main():
-    print_welcome()
+    print_welcome("to the username generator")
     username = get_username()
-    print(username)
+
+    print(f"Your new username is {username}")
 
 
 if __name__ == "__main__":
