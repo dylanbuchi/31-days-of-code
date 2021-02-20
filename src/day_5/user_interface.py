@@ -25,7 +25,7 @@ class UserInterface():
                 assert self.nb_numbers > 0
 
             except (ValueError, AssertionError):
-                print("Please enter a valid numbers")
+                print("Please enter a valid number")
                 continue
             else:
                 break
