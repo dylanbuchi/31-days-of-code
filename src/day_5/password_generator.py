@@ -1,67 +1,37 @@
 import random
 
-#Password Generator
 
+class PasswordGenerator:
+    def __init__(
+        self,
+        letters_amount: int,
+        symbols_amount: int,
+        numbers_amount: int,
+    ):
 
-def generate_password(nb_letters, nb_symbols, nb_numbers):
-    lower_letters_list = [chr(i) for i in range(97, 123)]
-    letters_list = [i.upper() for i in lower_letters_list] + lower_letters_list
+        self.lower_letters = [chr(i) for i in range(97, 123)]
+        self.letters = [i.upper()
+                        for i in self.lower_letters] + self.lower_letters
 
-    numbers_list = [i for i in range(10)]
-    symbols_list = ['!', '#', '$', '%', '&', '(', ')', '*', '+', '.', '-', '=']
+        self.numbers = [i for i in range(10)]
+        self.symbols = [
+            '!', '#', '$', '%', '&', '(', ')', '*', '+', '.', '-', '='
+        ]
 
-    return get_password(nb_letters, nb_symbols, nb_numbers, letters_list,
-                        numbers_list, symbols_list)
+        self.letters_amount = letters_amount
+        self.symbols_amount = symbols_amount
+        self.numbers_amount = numbers_amount
+        self.password = []
 
+    def generate_password(self):
+        self._append_to_password_from(self.letters, self.letters_amount)
+        self._append_to_password_from(self.symbols, self.symbols_amount)
+        self._append_to_password_from(self.numbers, self.numbers_amount)
 
-def get_password(*args):
-    nb_letters, nb_symbols, nb_numbers, letters_list, numbers_list, symbols_list = args
-    password = []
+        random.shuffle(self.password)
+        return ''.join(self.password)
 
-    append_character_to_password(nb_letters, letters_list, password)
-    append_character_to_password(nb_symbols, symbols_list, password)
-    append_character_to_password(nb_numbers, numbers_list, password)
-
-    random.shuffle(password)
-    return ''.join(password)
-
-
-def append_character_to_password(user_number, lst, password):
-    for _ in range(user_number):
-        ch = random.choice(lst)
-        password.append(str(ch))
-
-
-def main():
-    print("Welcome to BIGSECURE Password Generator!!")
-
-    letters, symbols, numbers = ask_user_password_details()
-
-    print("Here is your new password: ")
-    print(generate_password(letters, symbols, numbers))
-
-
-def ask_user_password_details():
-    while True:
-        try:
-            nb_letters = int(
-                input("How many letters would you like in your password?\n"))
-            assert nb_letters > 0
-
-            nb_symbols = int(input(f"How many symbols would you like?\n"))
-            assert nb_symbols > 0
-
-            nb_numbers = int(input(f"How many numbers would you like?\n"))
-            assert nb_numbers > 0
-
-        except (ValueError, AssertionError):
-            print("Please enter a valid numbers")
-            continue
-        else:
-            break
-
-    return nb_letters, nb_symbols, nb_numbers
-
-
-if __name__ == "__main__":
-    main()
+    def _append_to_password_from(self, lst: list, amount: int):
+        for _ in range(amount):
+            ch = random.choice(lst)
+            self.password.append(str(ch))
