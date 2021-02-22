@@ -17,9 +17,7 @@ class Dice:
 
     def roll_dices(self, dices_number):
         dices = dices_number
-        stats = self.rolling_a_dice(dices)
-
-        return stats
+        self.rolling_a_dice(dices)
 
     def rolling_a_dice(self, dices):
         for dice in range(1, dices + 1):
