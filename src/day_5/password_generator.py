@@ -1,4 +1,5 @@
 import random
+import string
 
 
 class PasswordGenerator:
@@ -8,19 +9,14 @@ class PasswordGenerator:
         symbols_amount: int,
         numbers_amount: int,
     ):
-
-        self.lower_letters = [chr(i) for i in range(97, 123)]
-        self.letters = [i.upper()
-                        for i in self.lower_letters] + self.lower_letters
-
-        self.numbers = [i for i in range(10)]
-        self.symbols = [
-            '!', '#', '$', '%', '&', '(', ')', '*', '+', '.', '-', '='
-        ]
-
         self.letters_amount = letters_amount
         self.symbols_amount = symbols_amount
         self.numbers_amount = numbers_amount
+
+        self.letters = list(string.ascii_letters)
+        self.symbols = list(string.punctuation)
+        self.numbers = [i for i in range(10)]
+
         self.password = []
 
     def generate_password(self):
