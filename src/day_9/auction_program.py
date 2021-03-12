@@ -1,16 +1,14 @@
 # Auction_Program
 import os
 import sys
-import random
+sys.path.extend([os.path.join(os.getcwd(), 'src'), os.path.join(os.getcwd())])
 
-sys.path.append(os.path.join(os.getcwd(), 'src'))
+import random
 
 from day_9.auction import Auction
 from day_9.logo import LOGO
 
-
-def clear_console():
-    os.system('cls' if os.name == 'nt' else 'clear')
+from utility import clear_console
 
 
 def get_random_bid(start=1, end=2000):
