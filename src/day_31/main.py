@@ -5,7 +5,7 @@ import urllib.request
 from selenium import webdriver
 
 FIREFOX_DRIVER_PATH = r"C:\Users\crypt\development\geckodriver\geckodriver.exe"
-IMAGE_PATH = os.path.join(os.getcwd(), 'src/day_31/images/bg.png')
+IMAGE_PATH = os.path.join(os.getcwd(), "src/day_31/images/bg.png")
 
 
 def change_background_image():
@@ -13,9 +13,9 @@ def change_background_image():
         20, 0, f"{os.path.abspath(IMAGE_PATH)}", 0)
 
 
-def get_web_driver():
+def get_web_driver_for(url):
     driver = webdriver.Firefox(executable_path=FIREFOX_DRIVER_PATH)
-    driver.get("https://wallpaperscraft.com/")
+    driver.get(url)
     driver.fullscreen_window()
     return driver
 
@@ -30,16 +30,17 @@ def get_target_from(data, target):
 
 
 def main():
-    driver = get_web_driver()
+    url = "https://wallpaperscraft.com/"
+    driver = get_web_driver_for(url)
 
     image = driver.find_element_by_class_name("wallpapers__image")
     image.click()
 
     resolutions = driver.find_elements_by_class_name("resolutions__link")
-    resolution_1920x1200 = get_target_from(resolutions, '1920x1200')
+    resolution_1920x1200 = get_target_from(resolutions, "1920x1200")
     resolution_1920x1200.click()
 
-    a_tags = driver.find_elements_by_tag_name('a')
+    a_tags = driver.find_elements_by_tag_name("a")
     download_button = get_target_from(a_tags, "Download wallpaper 1920x1200")
     download_button.click()
 
