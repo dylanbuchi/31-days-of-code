@@ -1,6 +1,6 @@
 # 31 Days Of Code
 
-One Python project every day for a month
+I took on a challenge to build 31 mini-projects using Python. These projects included a variety of applications and features, such as a hangman game, a tic-tac-toe game, a quiz program, and a flash cards app.
 
 # Overview:
 
