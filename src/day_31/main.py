@@ -1,54 +1,56 @@
-import os
-import ctypes
-import urllib.request
+import pyautogui
 
 from selenium import webdriver
+from selenium.webdriver import ActionChains
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
 
-FIREFOX_DRIVER_PATH = r"C:\Users\crypt\development\geckodriver\geckodriver.exe"
-IMAGE_PATH = os.path.join(os.getcwd(), "src/day_31/images/bg.png")
+from webdriver_manager.firefox import GeckoDriverManager
+from time import sleep
 
 
-def change_background_image():
-    ctypes.windll.user32.SystemParametersInfoW(
-        20, 0, f"{os.path.abspath(IMAGE_PATH)}", 0)
+WALLPAPERS_URL = "https://dailydevbytes.com/channel/wallpapers"
+
+ 
+class Keys:
+    DOWN = "down"
+    ENTER = "enter"
 
 
 def get_web_driver_for(url):
-    driver = webdriver.Firefox(executable_path=FIREFOX_DRIVER_PATH)
+    driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
     driver.get(url)
-    driver.fullscreen_window()
     return driver
 
 
-def get_target_from(data, target):
-    result = None
-    for item in data:
-        if item.text == target:
-            result = item
-            break
-    return result
+def press_key(key, press_count=1):
+    for _ in range(press_count):
+        pyautogui.press(key)
+
+
+
+def set_wallpaper(driver):
+    first_image = driver.find_element(By.TAG_NAME, "img")
+
+    action_chains = ActionChains(driver)
+    action_chains.context_click(first_image).perform()
+
+    press_key(Keys.DOWN, 13)
+    press_key(Keys.ENTER)
+
+    sleep(2.5)
+
+    press_key(Keys.DOWN, 6)
+    press_key(Keys.ENTER)
 
 
 def main():
-    url = "https://wallpaperscraft.com/"
-    driver = get_web_driver_for(url)
+    driver = get_web_driver_for(WALLPAPERS_URL)
+    set_wallpaper(driver)
 
-    image = driver.find_element_by_class_name("wallpapers__image")
-    image.click()
-
-    resolutions = driver.find_elements_by_class_name("resolutions__link")
-    resolution_1920x1200 = get_target_from(resolutions, "1920x1200")
-    resolution_1920x1200.click()
-
-    a_tags = driver.find_elements_by_tag_name("a")
-    download_button = get_target_from(a_tags, "Download wallpaper 1920x1200")
-    download_button.click()
-
-    url = driver.find_element_by_tag_name("img").get_attribute("src")
-    urllib.request.urlretrieve(url, IMAGE_PATH)
-    change_background_image()
     driver.quit()
 
 
 if __name__ == "__main__":
     main()
+
